@@ -113,3 +113,44 @@ body{
         font-size: 38px;
     }
 }
+.footer-link:nth-child(2){
+    margin:0 24px;
+}
+@media(max-width:420px){
+    .first-card-row{
+        flex-direction: column;
+    }
+    .gta-img{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .fortnite-img{
+        margin: 0;
+    }
+    .hero-title{
+        font-size:38px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-link:nth-child(2){
+        margin: 0;
+    }
+}
+.logo{
+    animation-name: rotation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.logo:hover{
+    animation-play-state: paused;
+}
+@keyframes rotation {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
